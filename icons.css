@@ -1,0 +1,21 @@
+footer>p{
+    font-size: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+footer>p>a{
+    padding: 10px;
+}
+
+footer>p>a>i{
+    text-decoration: none;
+    color:#2b9c14;
+    font-size: 40px;
+}
+
+footer>p>a>i:hover{
+    text-decoration: none;
+    color:aquamarine;
+    font-size: 40px;
+}

@@ -1,0 +1,83 @@
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "head" "nav article aside" "footer";
+}
+
+main > nav, 
+main > aside {
+    background: #000;
+    height: 650px;
+}
+
+nav>ul{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+nav>ul>li{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+nav>ul>li>a{
+    height: max-content;
+    width: max-content;
+    color: #2b9c14;
+    padding-left: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+nav>ul>li{
+    padding-bottom: 15px;
+}
+nav>ul>li>a{
+    width: 100%;
+    list-style: none;
+    font-family: fantasy, copperplate;
+    font-size: 30px;
+    text-align: left;
+}
+nav>ul>li>a:hover{
+    list-style: none;
+    background-color: #283621;
+    font-family: fantasy, copperplate;
+    font-size: 30px;
+    text-align: left;
+    color: aquamarine;
+}
+
+header {
+    background: #000;
+    text-align: center;
+}
+
+header>p{
+    color: #2b9c14;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: fantasy, copperplate;
+    font-size: 32px;
+    white-space:pre;
+}
+
+article {
+  background: #99ff99;
+  height: 650px;
+}
+
+footer {
+  background: #131413;
+  text-align: center;
+  color: #99ff99;
+}
+
+header, footer, article, nav, aside {
+  padding: 1em;
+}
