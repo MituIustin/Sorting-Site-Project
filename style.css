@@ -14,7 +14,7 @@ main {
 main > nav, 
 main > aside {
     background: #000;
-    height: 650px;
+    height: 850px;
 }
 
 nav>ul{
@@ -34,20 +34,20 @@ nav>ul>li>a{
     text-decoration: none;
 }
 nav>ul>li{
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 nav>ul>li>a{
     width: 100%;
     list-style: none;
-    font-family: fantasy, copperplate;
-    font-size: 30px;
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 25px;
     text-align: left;
 }
 nav>ul>li>a:hover{
     list-style: none;
     background-color: #283621;
-    font-family: fantasy, copperplate;
-    font-size: 30px;
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 25px;
     text-align: left;
     color: aquamarine;
 }
@@ -69,8 +69,49 @@ header>p{
 
 article {
   background: #99ff99;
-  height: 650px;
+  /*height: 650px;*/
 }
+
+main>aside>h2{
+    color: #0c91c9;
+    text-align: center;
+}
+
+main>aside>table{
+    color:white;
+}
+
+main>aside>table,th,tr{
+    border: 1px solid;
+    border-color: #0c91c9;
+    
+}
+
+main>aside>div{
+    margin-top: 20px;
+}
+
+
+.ide{
+    background-color: #2a2d2e;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    
+}
+
+.code{
+    color:white;
+    font-size: 20px;
+    white-space: nowrap;
+    text-overflow: "";
+    font-family:'Courier New', monospace;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 
 footer {
   background: #131413;
@@ -80,4 +121,11 @@ footer {
 
 header, footer, article, nav, aside {
   padding: 1em;
+}
+
+header>p{
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 50px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
