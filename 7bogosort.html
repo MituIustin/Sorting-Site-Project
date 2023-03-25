@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <head>
-   <title>Sort Site</title>
+   <title> Sort Site </title>
    <link rel="stylesheet" href="style.css" type="text/css">
    <link rel="stylesheet" href="scrollbar.css" type="text/css">
+   <link rel="stylesheet" href="icons.css" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet">
 </head>
 <body>
   <header>
-    <p>----- Sort     Site -----</p>
+    <p> Sort Site </p>
   </header>
   <main>
     <nav>
@@ -20,13 +23,62 @@
         <li> <a href="7bogosort.html">Bogosort</a></li>
       </ul>
     </nav>
-    <article>article</article>
-    <aside>aside</aside>
+    <article>
+
+    </article>
+    <aside>
+
+      <h2>Code</h3>
+
+      <table>
+        <tr>
+          <th></th>
+          <th>Best Case</th>
+          <th>Average Case</th>
+          <th>Worst Case</th>
+        </tr>
+        <tr>
+          <th>Time Complexity</th>
+          <th>O(n)</th>
+          <th>O(n<sup>2</sup>)</th>
+          <th>O(n<sup>2</sup>)</th>
+        </tr>
+      </table>
+
+      <div class="ide">
+        <p class="code">include &#60iostream&#62</p>
+        <p class="code"></p>
+        <p class="code">using namespace std:</p>
+        <p class="code"></p>
+        <p class="code">int main()</p>
+        <p class="code">{</p>
+        <p class="code">&#9 int n = 7;</p>
+        <p class="code" > int v[] = {2, 1, 8, 20, -1, -100, 5};</p>
+        <p class="code">bool ok = true;</p>
+        <p class="code">while(ok)</p>
+        <p class="code">{</p>
+        <p class="code">ok = false;</p>
+        <p class="code">for(int i=0; i&#60n-1; i++)</p>
+        <p class="code">{</p>
+        <p class="code">if(v[i] &#62 v[i+1])</p>
+        <p class="code">{</p>
+        <p class="code">ok = true;</p>
+        <p class="code">swap(v[i],v[i+1]);</p>
+        <p class="code">}</p>
+        <p class="code">}</p>
+        <p class="code">}</p>
+        <p class="code">}</p>
+      </div>
+
+    </aside>
   </main>
-  <footer>footer 
-    <p>
-      assa
-    </p>
+  <footer>
+    <h3>Date de contact:</h3>
+    <p><a href="https://instagram.com/iustinsoad?igshid=ZDdkNTZiNTM="><i class="fa fa-instagram"></i></a>
+      <a href="https://www.facebook.com/iustinaurelian.mitu/"><i class="fa fa-facebook-f"></i></a>
+      <a href="https://http.cat/418"><i class="fa fa-twitter"></i></a>
+      <a href="https://http.cat/418"><i class="fa fa-whatsapp"></i></a>
+   </p>
   </footer>
 </body>
 </html>
