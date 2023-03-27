@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <p> Sort Site </p>
+    <a href="index.html"><p> Sort Site </p></a>
   </header>
   <main>
     <nav>
@@ -19,16 +19,16 @@
         <li> <a href="3insertionsort.html">Insertion Sort</a></li>
         <li> <a href="4pancakesort.html">Pancake Sort</a></li>
         <li> <a href="5cocktailsort.html">Cocktail Sort</a></li>
-        <li> <a href="6quicksort.html">Quick Sort</a></li>
+        <li> <a href="6mergesort.html">Merge Sort</a></li>
         <li> <a href="7bogosort.html">Bogosort</a></li>
       </ul>
     </nav>
     <article>
-
+        <p>
+          Working in progress...
+        </p>
     </article>
     <aside>
-
-      <h2>Code</h3>
 
       <table>
         <tr>
@@ -39,36 +39,52 @@
         </tr>
         <tr>
           <th>Time Complexity</th>
-          <th>O(n)</th>
-          <th>O(n<sup>2</sup>)</th>
-          <th>O(n<sup>2</sup>)</th>
+          <th>n</th>
+          <th>???</th>
+          <th>&#8734;</th>
         </tr>
       </table>
 
-      <div class="ide">
-        <p class="code">include &#60iostream&#62</p>
-        <p class="code"></p>
-        <p class="code">using namespace std:</p>
-        <p class="code"></p>
-        <p class="code">int main()</p>
-        <p class="code">{</p>
-        <p class="code">&#9 int n = 7;</p>
-        <p class="code" > int v[] = {2, 1, 8, 20, -1, -100, 5};</p>
-        <p class="code">bool ok = true;</p>
-        <p class="code">while(ok)</p>
-        <p class="code">{</p>
-        <p class="code">ok = false;</p>
-        <p class="code">for(int i=0; i&#60n-1; i++)</p>
-        <p class="code">{</p>
-        <p class="code">if(v[i] &#62 v[i+1])</p>
-        <p class="code">{</p>
-        <p class="code">ok = true;</p>
-        <p class="code">swap(v[i],v[i+1]);</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-      </div>
+      <pre class="ide">
+<p class="code">
+// C++ implementation of Bogo Sort
+#include &#60;bits/stdc++.h&#62;
+using namespace std;
+   
+// To check if array is sorted or not
+bool isSorted(int a[], int n)
+{
+  while (--n &#62; 0)
+    if (a[n] &#60; a[n - 1])
+      return false;
+  return true;
+}
+   
+// To generate permutation of the array
+void shuffle(int a[], int n)
+{
+  for (int i = 0; i &#60; n; i++)
+    swap(a[i], a[rand() % n]);
+}
+   
+// Sorts array a[0..n-1] using Bogo sort
+void bogosort(int a[], int n)
+{
+  // if array is not sorted then shuffle
+  // the array again
+  while (!isSorted(a, n))
+    shuffle(a, n);
+}
+   
+// Driver code
+int main()
+{
+  int a[] = { 3, 2, 5, 1, 0, 4 };
+  int n = 6;
+  bogosort(a, n);
+}
+</p>
+      </pre>
 
     </aside>
   </main>
