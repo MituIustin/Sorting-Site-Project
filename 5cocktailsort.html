@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <p> Sort Site </p>
+    <a href="index.html"><p> Sort Site </p></a>
   </header>
   <main>
     <nav>
@@ -19,7 +19,7 @@
         <li> <a href="3insertionsort.html">Insertion Sort</a></li>
         <li> <a href="4pancakesort.html">Pancake Sort</a></li>
         <li> <a href="5cocktailsort.html">Cocktail Sort</a></li>
-        <li> <a href="6quicksort.html">Quick Sort</a></li>
+        <li> <a href="6mergesort.html">Merge Sort</a></li>
         <li> <a href="7bogosort.html">Bogosort</a></li>
       </ul>
     </nav>
@@ -27,8 +27,6 @@
 
     </article>
     <aside>
-
-      <h2>Code</h3>
 
       <table>
         <tr>
@@ -39,36 +37,59 @@
         </tr>
         <tr>
           <th>Time Complexity</th>
-          <th>O(n)</th>
-          <th>O(n<sup>2</sup>)</th>
-          <th>O(n<sup>2</sup>)</th>
+          <th>n</th>
+          <th>n<sup>2</sup></th>
+          <th>n<sup>2</sup></th>
         </tr>
       </table>
 
-      <div class="ide">
-        <p class="code">include &#60iostream&#62</p>
-        <p class="code"></p>
-        <p class="code">using namespace std:</p>
-        <p class="code"></p>
-        <p class="code">int main()</p>
-        <p class="code">{</p>
-        <p class="code">&#9 int n = 7;</p>
-        <p class="code" > int v[] = {2, 1, 8, 20, -1, -100, 5};</p>
-        <p class="code">bool ok = true;</p>
-        <p class="code">while(ok)</p>
-        <p class="code">{</p>
-        <p class="code">ok = false;</p>
-        <p class="code">for(int i=0; i&#60n-1; i++)</p>
-        <p class="code">{</p>
-        <p class="code">if(v[i] &#62 v[i+1])</p>
-        <p class="code">{</p>
-        <p class="code">ok = true;</p>
-        <p class="code">swap(v[i],v[i+1]);</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-      </div>
+      <pre class="ide">
+<p class="code">
+#include &#60;iostream&#62;
+
+using namespace std;
+
+void cocktailSort(int arr[], int n)
+{
+  bool flag = true;
+  int start = 0, end = n-1;
+  while(flag)
+  {
+    flag = false;
+    for(int i = start; i &#60; end; i++)
+    { 
+      if(arr[i] &#62; arr[i+1])
+      {
+        swap(arr[i], arr[i+1]);
+        flag = true;
+      }
+    }
+    if(!flag)
+    { 
+      break;
+    }
+    flag = false;
+    end--; 
+    for(int i = end - 1; i &#62;= start; i--)
+    { 
+      if(arr[i] &#62; arr[i+1])
+      {
+        swap(arr[i], arr[i+1]);
+        flag = true;
+      }
+    }
+    start++;
+  }
+}
+main() 
+{
+   int data[] = {54, 74, 98, 154, 98, 32, 20, 13, 35, 40};
+   int n = 10;
+   cocktailSort(data, n);
+}
+</p>
+      </pre>
+
 
     </aside>
   </main>
