@@ -57,19 +57,18 @@ header {
     text-align: center;
 }
 
-header>p{
-    color: #2b9c14;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    font-family: fantasy, copperplate;
-    font-size: 32px;
-    white-space:pre;
-}
-
 article {
   background: #99ff99;
   /*height: 650px;*/
+}
+
+main>article>p{
+    text-align: center;
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    color: #2b9c14;
 }
 
 main>aside>h2{
@@ -99,13 +98,12 @@ main>aside>div{
     overflow: hidden;
     overflow-y: scroll;
     overflow-x: scroll;
-    
 }
 
 .code{
     color:white;
     font-size: 20px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     text-overflow: "";
     font-family:'Courier New', monospace;
     margin-top: 0px;
@@ -123,9 +121,19 @@ header, footer, article, nav, aside {
   padding: 1em;
 }
 
-header>p{
+header>a{
+    text-decoration: none;
     font-family: '8BIT WONDER', sans-serif;
     font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding-bottom: 20px;
     padding-top: 10px;
+    color: #2b9c14;
 }
+header>a>p{
+    font-family: '8BIT WONDER', sans-serif;
+    font-size: 40px;
+
+}
+
