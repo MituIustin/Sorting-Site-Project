@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <p> Sort Site </p>
+    <a href="index.html"><p> Sort Site </p></a>
   </header>
   <main>
     <nav>
@@ -19,7 +19,7 @@
         <li> <a href="3insertionsort.html">Insertion Sort</a></li>
         <li> <a href="4pancakesort.html">Pancake Sort</a></li>
         <li> <a href="5cocktailsort.html">Cocktail Sort</a></li>
-        <li> <a href="6quicksort.html">Quick Sort</a></li>
+        <li> <a href="6mergesort.html">Merge Sort</a></li>
         <li> <a href="7bogosort.html">Bogosort</a></li>
       </ul>
     </nav>
@@ -27,8 +27,6 @@
 
     </article>
     <aside>
-
-      <h2>Code</h3>
 
       <table>
         <tr>
@@ -39,36 +37,63 @@
         </tr>
         <tr>
           <th>Time Complexity</th>
-          <th>O(n)</th>
-          <th>O(n<sup>2</sup>)</th>
-          <th>O(n<sup>2</sup>)</th>
+          <th>n</th>
+          <th>n<sup>2</sup></th>
+          <th>n<sup>2</sup></th>
         </tr>
       </table>
 
-      <div class="ide">
-        <p class="code">include &#60iostream&#62</p>
-        <p class="code"></p>
-        <p class="code">using namespace std:</p>
-        <p class="code"></p>
-        <p class="code">int main()</p>
-        <p class="code">{</p>
-        <p class="code">&#9 int n = 7;</p>
-        <p class="code" > int v[] = {2, 1, 8, 20, -1, -100, 5};</p>
-        <p class="code">bool ok = true;</p>
-        <p class="code">while(ok)</p>
-        <p class="code">{</p>
-        <p class="code">ok = false;</p>
-        <p class="code">for(int i=0; i&#60n-1; i++)</p>
-        <p class="code">{</p>
-        <p class="code">if(v[i] &#62 v[i+1])</p>
-        <p class="code">{</p>
-        <p class="code">ok = true;</p>
-        <p class="code">swap(v[i],v[i+1]);</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-      </div>
+      <pre class="ide">
+<p class="code">
+#include &#60;iostream&#62;
+
+using namespace std;
+
+void rev(int arr[], int i) 
+{
+  int temp, st = 0;
+  while(st &#60; i) 
+  {
+    temp = arr[st];
+    arr[st] = arr[i];
+    arr[i] = temp;
+    st++;
+    i--;
+  }
+}
+
+int maxIndex(int arr[], int n) {
+  int index, i;
+  for(index = 0, i = 0; i &#60; n; ++i)
+  {
+    if(arr[i] &#62; arr[index]) 
+    {
+      index = i;
+    }
+  }
+  return index;
+}
+
+int pancakeSort(int arr[], int n) 
+{
+  for(int size = n; size > 1; size--) 
+  {
+    int index = maxIndex(arr, size);
+    if(index != size-1) 
+    {
+      rev(arr, index);
+      rev(arr, size-1);
+    }
+  }
+}
+int main() 
+{
+  int arr[] = {54, 85, 52, 25, 98, 75, 25, 11, 68};
+  int n = 9;
+  pancakeSort(arr, n);
+}
+</p>
+      </pre>
 
     </aside>
   </main>
