@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <p> Sort Site </p>
+    <a href="index.html"><p> Sort Site </p></a>
   </header>
   <main>
     <nav>
@@ -19,7 +19,7 @@
         <li> <a href="3insertionsort.html">Insertion Sort</a></li>
         <li> <a href="4pancakesort.html">Pancake Sort</a></li>
         <li> <a href="5cocktailsort.html">Cocktail Sort</a></li>
-        <li> <a href="6quicksort.html">Quick Sort</a></li>
+        <li> <a href="6mergesort.html">Merge Sort</a></li>
         <li> <a href="7bogosort.html">Bogosort</a></li>
       </ul>
     </nav>
@@ -27,8 +27,6 @@
 
     </article>
     <aside>
-
-      <h2>Code</h3>
 
       <table>
         <tr>
@@ -39,36 +37,41 @@
         </tr>
         <tr>
           <th>Time Complexity</th>
-          <th>O(n)</th>
-          <th>O(n<sup>2</sup>)</th>
-          <th>O(n<sup>2</sup>)</th>
+          <th>n<sup>2</sup></th>
+          <th>n<sup>2</sup></th>
+          <th>n<sup>2</sup></th>
         </tr>
       </table>
 
-      <div class="ide">
-        <p class="code">include &#60iostream&#62</p>
-        <p class="code"></p>
-        <p class="code">using namespace std:</p>
-        <p class="code"></p>
-        <p class="code">int main()</p>
-        <p class="code">{</p>
-        <p class="code">&#9 int n = 7;</p>
-        <p class="code" > int v[] = {2, 1, 8, 20, -1, -100, 5};</p>
-        <p class="code">bool ok = true;</p>
-        <p class="code">while(ok)</p>
-        <p class="code">{</p>
-        <p class="code">ok = false;</p>
-        <p class="code">for(int i=0; i&#60n-1; i++)</p>
-        <p class="code">{</p>
-        <p class="code">if(v[i] &#62 v[i+1])</p>
-        <p class="code">{</p>
-        <p class="code">ok = true;</p>
-        <p class="code">swap(v[i],v[i+1]);</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-        <p class="code">}</p>
-      </div>
+      <pre class="ide">
+<p class="code">
+#include &#60;iostream&#62;
+
+using namespace std:
+         
+int main()        
+{ 
+  int n = 7; 
+  int v[] = {2, 1, 8, 20, -1, -100, 5};
+  for(int i=0; i &#60; n; i++)
+  {
+    int minim = 999999;
+    int poz_minim = -1;
+    for(int j=i; j &#60; n; j++)
+    {
+      if(v[j] &#60; minim)
+      {
+        minim = v[j];
+        poz_minim = j;
+      }
+    }
+    if(poz_minim != -1)
+    {
+      swap(v[i],v[poz_minim]);
+    }
+  }
+</p>
+      </pre>
 
     </aside>
   </main>
