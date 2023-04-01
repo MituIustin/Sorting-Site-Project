@@ -3,6 +3,7 @@ body {
   display: grid;
   min-height: 100vh;
   margin: 0;
+  height:auto;
 }
 
 main {
@@ -98,16 +99,9 @@ main>aside>div{
     overflow: hidden;
     overflow-y: scroll;
     overflow-x: scroll;
-}
-
-.code{
     color:white;
     font-size: 20px;
-    /*white-space: nowrap;*/
-    text-overflow: "";
     font-family:'Courier New', monospace;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 
@@ -137,3 +131,10 @@ header>a>p{
 
 }
 
+/* partea asta va fi scoasa la tema 2
+    o folosesc strict pt, a nu a avea erori 
+    la html checker. */
+
+article>h2{
+    color:#99ff99;
+}
