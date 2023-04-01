@@ -1,6 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
    <title> Sort Site </title>
+
+   <meta name="autor" content="Mitu Iustin">
+   <meta name="description" content="Sorting Algorithms">
+   <meta name="keywords" content="Sorting, Algorithm, Bubblesort, Insertionsort, Pancakesort, Cocktailsort, Mergesort, Bogosort">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
    <link rel="stylesheet" href="style.css" type="text/css">
    <link rel="stylesheet" href="scrollbar.css" type="text/css">
    <link rel="stylesheet" href="icons.css" type="text/css">
@@ -24,7 +31,7 @@
       </ul>
     </nav>
     <article>
-
+      <h2>Aici inca nu se afla nimic dar trebuie sa repar warrning-ul de la html checker.</h2>
     </article>
     <aside>
 
@@ -45,7 +52,7 @@
       </table>
 
       <pre class="ide">
-<p class="code">
+
 #include &#60;iostream&#62;
 
 using namespace std;
@@ -65,7 +72,7 @@ void merge(int arr[], int p, int q, int r)
   j = 0;
   k = p;
 
-  while (i &#60; n1 && j < n2) {
+  while (i &#60; n1 && j &#60; n2) {
     if (L[i] &#60;= M[j]) {
       arr[k] = L[i];
       i++;
@@ -109,7 +116,7 @@ int main() {
   int size = 6;
   mergeSort(arr, 0, size - 1);
 }
-</p>
+
       </pre>
 
     </aside>
