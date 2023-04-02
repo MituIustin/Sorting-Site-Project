@@ -124,7 +124,30 @@ header>a{
     padding-bottom: 20px;
     padding-top: 10px;
     color: #2b9c14;
+    animation-name: animatietitlu;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
+
+header>a>p::after{    
+    content: "-";
+    text-decoration: none;
+}
+header>a>p::before{
+    content: "-";
+    text-decoration: none;
+}
+
+
+@keyframes animatietitlu {
+    0% {color: #2b9c14;}
+    20% {color: yellow;}
+    40% {color: orange;}
+    60% {color: red;}
+    80% {color: #4625b3}
+    100% {color: #2b9c14;}
+}
+
 header>a>p{
     font-family: '8BIT WONDER', sans-serif;
     font-size: 40px;
@@ -138,3 +161,5 @@ header>a>p{
 article>h2{
     color:#99ff99;
 }
+
+
