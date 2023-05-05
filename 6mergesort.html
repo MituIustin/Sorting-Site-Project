@@ -13,6 +13,8 @@
    <link rel="stylesheet" href="icons.css" type="text/css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet">
+   <script src="6mergesort.html" defer></script>
+   <script src="generate.js" defer></script>
 </head>
 <body>
   <header>
@@ -31,7 +33,11 @@
       </ul>
     </nav>
     <article>
-      <h2>Aici inca nu se afla nimic dar trebuie sa repar warrning-ul de la html checker.</h2>
+      <input type="range" min="10" max="35" value="20" step="1" id="myRange">
+      <p>Current value: <span id="rangeValue"></span></p>
+      <button onclick="generate()" class="btn1"> GENERATE </button>
+      <button onclick="sort()" class="btn2"> SORT</button>
+      <table id="numbers-container"></table>
     </article>
     <aside>
 

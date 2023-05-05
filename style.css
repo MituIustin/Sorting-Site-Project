@@ -169,7 +169,7 @@ input[type="range"] {
     width: 400px;
 }
 
-article>button{
+.btn1{
     background-color: #2b9c14;
     border: none;
     font-family: '8BIT WONDER', sans-serif;
@@ -179,7 +179,26 @@ article>button{
     font-size: 20px;
 }
 
-article>button:hover{
+.btn2{
+    background-color: #2b9c14;
+    border: none;
+    font-family: '8BIT WONDER', sans-serif;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn1:hover{
+    background-color: #4CAF50;
+    border: none;
+    font-family: '8BIT WONDER', sans-serif;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+}
+.btn2:hover{
     background-color: #4CAF50;
     border: none;
     font-family: '8BIT WONDER', sans-serif;
