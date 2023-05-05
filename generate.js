@@ -1,3 +1,32 @@
+function nav_bar(){
+    const rangeValue = document.getElementById("rangeValue");
+    const range = document.getElementById("myRange");
+    rangeValue.textContent = range.value; 
+    range.addEventListener("input", () => {
+    rangeValue.textContent = range.value; 
+    });
+}
+
+function swap(i, j) {
+    let v = document.getElementById("numbers-container");
+    
+    let num1_text = v.children[i].textContent;
+    let num2_text = v.children[j].textContent;
+
+    v.children[i].textContent = num2_text;
+    v.children[j].textContent = num1_text;
+
+    let num1_height = v.children[i].style.height;
+    let num2_height = v.children[j].style.height;
+
+    v.children[i].style.height = num2_height;
+    v.children[j].style.height = num1_height;
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function generate(){
     let numbersContainer = document.getElementById("numbers-container");
     numbersContainer.innerHTML = "";
@@ -38,3 +67,5 @@ function generate(){
    
    
 }
+
+nav_bar();
