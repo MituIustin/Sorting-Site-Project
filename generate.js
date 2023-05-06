@@ -60,8 +60,6 @@ function generate(){
         dataDiv.setAttribute("margin","2px");
         dataDiv.setAttribute("verticalAlign","bottom");
         
-        
-    
         numbersContainer.appendChild(dataDiv);
       }
    

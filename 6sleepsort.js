@@ -31,6 +31,7 @@ async function sort() {
   let buton1 = document.getElementsByClassName("btn1");
   let buton2 = document.getElementsByClassName("btn2");
   
+  
   buton1[0].disabled = true;
   buton2[0].disabled = true;
   buton1[0].style.background = "#4CAF50";
