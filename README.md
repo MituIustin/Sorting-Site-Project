@@ -5,7 +5,6 @@ Proiectul este aproape finalizat pentru tema 2.
 Ce mai trebuie implementat:
 
 - folosirea și modificarea evenimentelor generate de mouse si tastatură
-- folosirea localStorage
 - folosirea proprietăților classList
 - folosirea metodelor getComputedStyle și stopPropagation
 - validarea datelor dintr-un formular folosind expresii regulate
