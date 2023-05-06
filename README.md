@@ -1,7 +1,12 @@
 # Proiect-TW
 
-Proiectul este finalizat pentru tema 1.
+Proiectul este aproape finalizat pentru tema 2.
 
-Toate fiserele html si css au trecut peste validatoare fara erori. 
+Ce mai trebuie implementat:
 
-Pentru tema 2 as dori sa implementez cu ajutorul javascript-ului ceva pentru a vizualiza fiecare algoritm de sortare in parte.
+- folosirea și modificarea evenimentelor generate de mouse si tastatură
+- folosirea localStorage
+- folosirea proprietăților classList
+- folosirea metodelor getComputedStyle și stopPropagation
+- validarea datelor dintr-un formular folosind expresii regulate
+- tratarea altor probleme precum cea a accesibilității, internaționalizării, folosirii canvas/svg etc.
