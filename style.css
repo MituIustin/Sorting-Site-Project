@@ -250,3 +250,21 @@ article>p {
 .img2 {
     width: 80%;
 }
+
+canvas {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.par1{
+    color: #2b9c14;
+    font-size: 20px;
+    font-family: '8BIT WONDER', sans-serif;
+    text-align: center;
+}
+.par2{
+    color: #2b9c14;
+    font-size: 20px;
+    font-family: '8BIT WONDER', sans-serif;
+    text-align: center;
+}
