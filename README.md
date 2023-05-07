@@ -1,8 +1,4 @@
 # Proiect-TW
 
-Proiectul este aproape finalizat pentru tema 2.
-
-Ce mai trebuie implementat:
-
-- validarea datelor dintr-un formular folosind expresii regulate
-- tratarea altor probleme precum cea a accesibilității, internaționalizării, folosirii canvas/svg etc.
+Proiectul este finalizat pentru tema 2.
+Toate fisierele HTML si CSS trec de validatoare fara erori. 
