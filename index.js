@@ -12,3 +12,4 @@ incrementButton.addEventListener('click', function() {
 window.addEventListener('beforeunload', function(event) {
   localStorage.clear();
 });
+

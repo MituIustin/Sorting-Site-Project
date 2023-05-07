@@ -145,12 +145,14 @@ header>a>p{
 
 }
 
-/* partea asta va fi scoasa la tema 2
-    o folosesc strict pt, a nu a avea erori 
-    la html checker. */
 
 article>h2{
-    color:#99ff99;
+    color: #2b9c14;
+    font-size: 20px;
+    font-family: '8BIT WONDER', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 article>p{
@@ -209,8 +211,42 @@ input[type="range"] {
 }
 
 .cnt {
-    position: absolute;
-    bottom: 0;
-    margin-left: 450px;
+    text-align: center;
+    margin-top: 150px;
     
+}
+
+article>p {
+    color: #000000;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+#div_proiect1 {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#div_proiect2 {
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.cls_proiect {
+    color: #2b9c14;
+    font-size: 20px;
+    font-family: '8BIT WONDER', sans-serif;
+    text-align: center;
+}
+
+.img1 {
+    width: 80%;
+    
+}
+
+.img2 {
+    width: 80%;
 }
