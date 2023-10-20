@@ -23,10 +23,10 @@ In my free time, I help students to understand computer science and manage at sc
 - Concept of Responsiveness
 - Flex + Grid
 - Transitions
-- ![DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 - Functional Inputs
-- ![setTimeout](https://www.w3schools.com/jsref/met_win_settimeout.asp) + ![setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp)
-- ![localStorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+- [setTimeout](https://www.w3schools.com/jsref/met_win_settimeout.asp) + [setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+- [localStorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
 - Canvas
 
 
